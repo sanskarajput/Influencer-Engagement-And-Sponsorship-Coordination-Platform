@@ -1,0 +1,323 @@
+@media (min-width: 768px) {
+    #accordionSidebar:not(.toggled) span {
+        /* background-color: red; */
+        padding-left: .56875rem;
+    }
+}
+
+
+.my-col {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: -5px;
+}
+
+.input-group input:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+.input-group button:disabled {
+    cursor: not-allowed;
+}
+
+.my-navbar-item {
+    height: 2rem;
+    width: 2rem;
+}
+
+.float-label-input {
+    position: relative;
+    margin: 16px 0;
+}
+
+.float-label-input input,
+.float-label-input textarea,
+.float-label-input select {
+    width: 100%;
+    padding: 8px 4px 4px 14px;
+    border: 1px solid #4199f8;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px #4199f8;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s ease-out;
+}
+
+.float-label-input textarea:focus {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.float-label-input label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    /* font-family: cursive; */
+    color: #999;
+    pointer-events: none;
+    transition: all 0.2s ease-out;
+}
+
+.float-label-input textarea+label {
+    top: 1.5rem;
+}
+
+.float-label-input input:focus,
+textarea:focus,
+select:focus,
+.float-label-input input:not(:placeholder-shown),
+textarea:not(:placeholder-shown),
+select:not(:invalid) {
+    border-color: #007bff;
+    box-shadow: 1px 1px 2px 1px #007bff;
+}
+
+.float-label-input input:focus+label,
+.float-label-input input:not(:placeholder-shown)+label {
+    top: 0;
+    left: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #007bff;
+    background-color: white;
+    padding: 0 5px;
+    font-family: cursive;
+    transform: translateY(-50%);
+}
+
+.float-label-input textarea:focus+label,
+.float-label-input textarea:not(:placeholder-shown)+label {
+    top: 0;
+    left: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #007bff;
+    background-color: white;
+    padding: 0 5px;
+    font-family: cursive;
+    transform: translateY(-50%);
+}
+
+.float-label-input select:focus+label,
+.float-label-input select:not(:invalid)+label {
+    top: 0;
+    left: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #007bff;
+    background-color: white;
+    padding: 0 5px;
+    font-family: cursive;
+    transform: translateY(-50%);
+}
+
+.float-label-input input::placeholder,
+textarea::placeholder {
+    color: transparent;
+    padding: 20px;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+    color: #000000;
+    text-shadow: 0px 0px 2px #3e3d3d;
+}
+
+.login-pwd-eye-position {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.font-cursive {
+    font-family: cursive;
+}
+
+.form-group .form-check input[type="radio"] {
+    transform: scale(1.01);
+}
+
+.form-group .form-check input[type="radio"]:not(:disabled):not(:checked):hover,
+.form-group .form-check input[type="radio"]:not(:disabled):not(:checked)+label:hover {
+    color: rgb(228, 71, 228);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.form-group .form-check input[type="radio"]:checked+label {
+    font-weight: bolder;
+    color: blue;
+    cursor: pointer;
+}
+
+.form-group .form-check input[type="radio"]:disabled,
+.form-group .form-check input[type="radio"]:disabled+label {
+    cursor: not-allowed;
+}
+
+.pointer-hover {
+    cursor: pointer;
+    color: red;
+}
+
+button:focus {
+    box-shadow: none !important;
+    border-radius: none !important;
+}
+
+
+.router-link-active,
+.router-link-exact-active {
+    color: #6e707e;
+    border-color: #ffffff #ffffff #ffffff;
+    font-weight: 900;
+}
+
+
+
+/* DataTable Style */
+.bootstrap-table-wrapper {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+}
+
+table th div {
+    /* background-color: red; */
+    text-align: center;
+}
+
+table th.detail,
+table td:has(.detail-icon) {
+    /* first child */
+    width: 36px !important;
+    text-align: center;
+    /* background-color: red;  */
+}
+
+table th.bs-checkbox div,
+table td.bs-checkbox {
+    /* second child */
+    width: 38px !important;
+    /* background-color: purple; */
+}
+
+table th.serial-number,
+table td.serial-number {
+    /* third child */
+    width: 52px !important;
+    /* background-color: purple; */
+}
+
+table th.edit,
+table td.edit {
+    /* last child */
+    width: 55px !important;
+    /* background-color: purple; */
+}
+
+table th.flag,
+table td.flag {
+    /* last child */
+    width: 66px !important;
+    /* background-color: purple; */
+}
+
+table th,
+table td:not(:first-child):not(:nth-child(2)) {
+    width: auto;
+}
+
+table th,
+table td:not(:first-child):not(:nth-child(2)) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* background-color: rgb(216, 218, 255); */
+}
+
+.detail-view {
+    padding: 10px;
+    background-color: rgb(255, 228, 228);
+    border-radius: 10px;
+}
+
+.detail-row {
+    margin: 5px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.detail-label {
+    font-weight: bold;
+    min-width: 100px;
+}
+
+.detail-value {
+    flex: 1;
+}
+
+/* Action button styling */
+.like {
+    margin-right: 10px;
+}
+
+.remove i,
+.like i {
+    font-size: 1.5rem;
+}
+
+.bootstrap-table-wrapper button .fa {
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+/* DataTable Style */
+
+
+.stretch-textarea {
+    width: 100%;
+    /* Full width of the cell */
+    height: auto;
+    /* Initial height is auto */
+    min-height: 40px;
+    /* Set a minimum height for the textarea */
+    resize: none;
+    /* Disable manual resizing */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    overflow: hidden;
+    padding: 5px;
+}
+
+
+.animation-small-to-original {
+    animation: myAnim .4s ease 0s 1 normal forwards;
+}
+
+
+@keyframes myAnim {
+    0% {
+        transform: scale(0.01);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
