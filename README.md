@@ -31,7 +31,7 @@ npm install
 npm run serve
 ```
 
-### :point_right: To access the website [Click Here](http://localhost:8080)
+### :point_right: Now to access the website [http://localhost:8080](http://localhost:8080)
 
 
 ### :copyright: [MIT License](LICENSE)
